@@ -1,0 +1,151 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.6); /* semi-transparente */
+    backdrop-filter: blur(12px); /* efeito vidro */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+  }
+  
+  /* Deixa o conteúdo visível abaixo */
+  main {
+    margin-top: 90px;
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #eaeaea;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero */
+  .hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    background-image: url('https://via.placeholder.com/1600x900/000/0d6efd?text=Background');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Cards e botões */
+  .card {
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(13, 110, 253, 0.2);
+  }
+  
+  .btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  /* Inputs */
+  .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+    background-color: #1a1a1a;
+  }
+  
+  /* Botão voltar ao topo */
+  #backToTop {
+    display: none;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+  
+  footer a {
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover .bi-github { color: #fff; }
+  footer a:hover .bi-linkedin { color: #0a66c2; }
+  footer a:hover .bi-instagram { color: #e1306c; }
+  footer a:hover .bi-whatsapp { color: #25D366; }
+  footer a:hover .bi-twitter-x { color: #1DA1F2; }
+  * Modal de contato */
+#modalContato .btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#modalContato .btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(13, 110, 253, 0.3);
+}
+
+#modalContato .modal-content {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+}
+/* BOTÃO "ME CONTRATE" NO FOOTER */
+.hire-btn {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .hire-btn:hover {
+    background: linear-gradient(135deg, #20c55f, #0e7a68);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+  }
+  
+  footer a:hover .bi-github { color: #fff; }
+  footer a:hover .bi-linkedin { color: #0a66c2; }
+  footer a:hover .bi-instagram { color: #e1306c; }
+  footer a:hover .bi-whatsapp { color: #25D366; }
+  footer a:hover .bi-twitter-x { color: #1DA1F2; }
+  .profile-photo {
+    width: 120px; /* menor que antes */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0d6efd;
+    box-shadow: 0 0 25px rgba(13, 110, 253, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .profile-photo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  /* FOTO DA SEÇÃO SOBRE MIM */
+
+
+
+
+
